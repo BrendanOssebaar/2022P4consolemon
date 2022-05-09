@@ -14,9 +14,15 @@ namespace ConsoleMon
         public int EXP;
         public string Type;
 
+        public void TakeDamage(int Damage)
+        {
+            Health = Health - Damage;
+        }
 
-
-
+        public void DepleteEnergy(int energy)
+        {
+            Energy = Energy - energy;
+        }
 
 
 
